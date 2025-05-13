@@ -22,7 +22,7 @@ const userSchema = new Schema({
         required: [true, 'Password is required'],
         minlength: 6,
     }
-});
+}, { timestamps: true });
 
 const user = mongoose.model('User', userSchema);
 
